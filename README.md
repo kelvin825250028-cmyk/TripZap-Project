@@ -89,5 +89,8 @@ Navbar, section CTA "Interested in Chartering Your Yacht?", dan footer dipakai b
 
 Perintah lain: `npm run build` (hasil pada folder `dist`), `npm run preview`, dan `npm run lint`.
 
+## Deploy ke GitHub Pages
+Workflow GitHub Actions di `.github/workflows/deploy.yml` akan membangun dan menerbitkan aplikasi secara otomatis saat ada push ke branch default repository. Pastikan **Settings → Pages → Build and deployment → Source** disetel ke **GitHub Actions**. Setelah workflow berhasil, situs tersedia di URL GitHub Pages repository.
+
 ## Catatan
 Gambar memakai alamat Unsplash sebagai pengganti gambar demo, dan font memakai Google Fonts, sehingga koneksi internet diperlukan. Tampilan dibuat sebagai rekreasi tugas, bukan salinan aset premium atau kode sumber WordPress.
