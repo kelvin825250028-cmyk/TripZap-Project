@@ -1,0 +1,57 @@
+
+
+
+.home-layout {
+  animation: halaman-masuk 0.4s ease both;
+}
+
+@keyframes halaman-masuk {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-layout { animation: none; }
+}
+
+
+.booking-counter h4 { font-size: 1.25rem; text-align: center; margin-bottom: 1.2rem; }
+.booking-counter .react-guest { color: #536078; margin-bottom: 0.6rem; text-align: center; }
+.booking-counter .react-buttons { display: flex; justify-content: center; gap: 0.5rem; margin-bottom: 1rem; }
+.booking-counter .react-result { color: #536078; font-size: 0.9rem; margin: 0.6rem 0 1rem; }
+
+
+.plan-card:focus-visible,
+.season-card:focus-visible,
+.testi-dot:focus-visible,
+.btn-share:focus-visible {
+  outline: 3px solid rgba(0, 174, 239, 0.55);
+  outline-offset: 2px;
+}
+.season-card { cursor: pointer; }
+
+/* Halaman tambahan mengikuti gaya Tripzap */
+.extra-image-card,.extra-blog-card{height:100%;background:#fff;overflow:hidden;box-shadow:0 8px 28px rgba(15,34,65,.08);transition:transform .35s,box-shadow .35s}
+.extra-image-card:hover,.extra-blog-card:hover{transform:translateY(-7px);box-shadow:0 16px 35px rgba(15,34,65,.15)}
+.extra-image-card{height:390px;position:relative;color:#fff}
+.extra-image-card:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 25%,rgba(7,25,54,.85))}
+.extra-image-card img,.extra-blog-image img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.extra-image-card:hover img,.extra-blog-card:hover img{transform:scale(1.07)}
+.extra-image-card>div{position:absolute;z-index:1;left:28px;right:20px;bottom:26px}
+.extra-image-card span,.extra-blog-card small{font-size:.82rem;letter-spacing:.08em;color:var(--cyan)}
+.extra-image-card h3{color:#fff;font-size:1.8rem;margin:8px 0}
+.extra-image-card a,.extra-blog-card a{color:var(--cyan);font-weight:600}
+.extra-blog-card{border:1px solid #edf0f4}
+.extra-blog-image{height:240px;overflow:hidden}
+.extra-blog-card h3{font-family:'Playfair Display',serif;font-size:1.35rem;margin:14px 0}
+.extra-blog-card p{color:#7a8394;line-height:1.7}
+.contact-detail{display:flex;gap:16px;align-items:center;margin-top:25px;color:var(--gray)}
+.contact-detail>i{width:48px;height:48px;display:grid;place-items:center;background:#eaf9ff;color:var(--cyan);font-size:1.3rem}
+.contact-detail b{color:var(--navy)}
+.contact-form{padding:35px;background:#f7f9fb}
+.contact-form .form-control{border:1px solid #e2e7ed;border-radius:0;padding:13px 15px}
+.contact-form .form-control:focus{border-color:var(--cyan);box-shadow:0 0 0 .2rem rgba(0,174,239,.12)}
+.navbar-tripzap{transition:box-shadow .3s}
+.navbar-tripzap:has(.nav-link:hover){box-shadow:0 5px 20px rgba(10,30,60,.06)}
+@media(max-width:767px){.extra-image-card{height:320px}.contact-form{padding:22px}}
+@media(prefers-reduced-motion:reduce){.extra-image-card,.extra-blog-card,.extra-image-card img,.extra-blog-card img{transition:none}}
